@@ -1,0 +1,69 @@
+GPU 1;0;1
+LD 1
+CD $a;$alub
+
+LD &H
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &e
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &l
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &l
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &o
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD & #
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &W
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &o
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &r
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &l
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &d
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD &!
+CD $a;$gram
+DSGMA $aluoa
+CD $aluoa;$alua
+
+LD 10
+CD $a;$gram
+
+GPU 1;1;0
+HLT

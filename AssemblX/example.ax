@@ -1,0 +1,9 @@
+> Example
+NOP
+LD xaf
+CD 2,5
+LD b0110
+SMA 1
+CD 2,6
+CLD 2
+HLT
