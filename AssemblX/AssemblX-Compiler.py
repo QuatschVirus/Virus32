@@ -46,7 +46,7 @@ for line in content.split("\n"):
             arg_str += ("0" * (int(arg_match.group(1) if arg_match.group(1) != "" else (4 if len(args_split) > 1 else 32)) - len(arg_bin))) + arg_bin
         out += ("0" * (32 - len(arg_str))) + arg_str
         if len(out) > 36:
-            sys.exit(f"Error: Expression \"{line}\" brduced to long compile output ({len(out)}/36 bits)")
+            sys.exit(f"Error: Expression \"{line}\" produced to long compile output ({len(out)}/36 bits)")
         file_str += (format(int(out, 2), "x") if int(out, 2) != 0 else "0" * 9) + "\n"
         
 with open(p + "b", "w") as f:

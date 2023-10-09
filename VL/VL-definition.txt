@@ -1,0 +1,124 @@
+statically typed low level language
+no garbage collection
+
+---
+VARIABLES
+
+assign with
+type name = value;
+
+specify address with
+type name (address) = value;
+
+reference with
+name
+
+release with
+rel name;
+
+name cannot be a keyword, must be ascii
+---
+TYPES
+
+int - 32bit signed integer (between 2.147.483.647 and -2.147.483.648)
+bool - boolean (true or false)
+char - single character (between 0 and 255, can store a single 8bit ascii character with '')
+string - A simple string, basically char array (allows for 8bit ascii characters) with "". Getting an index from a string will return the character at that index
+NO SUPPORT FOR DECIMAL NUMBERS
+
+maybe structs for custom types...
+
+---
+FUNCTIONS
+
+define with
+return_type name (args):
+    code;
+;
+return type can be omitted to create a void function
+
+call with
+output = name(args);
+
+functions are "objects"
+calling a non-function variable will return the variables value
+
+---
+LOOP
+
+define with
+loop (condition):
+    code;
+;
+for while loop
+CUSTOM IMPLEMENTATION for FOR loops
+
+---
+CHECKS
+
+if (condition):
+    code;
+; elif (condition):
+    code;
+; else:
+    code;
+;
+
+---
+ARRAYS
+
+define with
+array[size] type name = {};
+i.e. array4 int test = {1, 2, 3, 4};
+
+access and set with
+name[index]
+i.e. test[2] (will return 3 with the definition above)
+
+index starts at 0
+
+---
+OPERATORS
+==, ===(checks if referencing the same memory address)
+$ to stringify
+
+
+ints
++, -, *, / (floordiv), %, <, >, <=, >=
+! for logical NOT
+& for logical AND
+| for logical OR
+|| for logical XOR
+!& for logical NAND
+!| for logical NOR
+!|| for logical XNOR
+
+
+strings
++ for concat
+? for length
+
+arrays
+< for append
+- [index] for removing element at index
++ for joining arrays
+? for length
+
+bool
+! for logical NOT
+& for logical AND
+| for logical OR
+|| for logical XOR
+!& for logical NAND
+!| for logical NOR
+!|| for logical XNOR
+
+---
+OTHER KEYWORDS
+ref - reference other files.
+ret value; - return value
+brk; - break. Stops the program when run outside a loop.
+con; - continue
+blk address; - block a memory address from being assigned
+ublk address; - unblock a memory address. Will release variables stored at that location
+

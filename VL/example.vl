@@ -1,0 +1,9 @@
+ref "std.vl";
+
+int sum(int a, int b):
+    ret a + b;
+;
+
+int a = 3;
+array4 int nums = {1, 2, 3, 4};
+print(sum(a, nums[2]);
